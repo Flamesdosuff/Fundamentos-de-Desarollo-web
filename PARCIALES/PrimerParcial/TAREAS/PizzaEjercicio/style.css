@@ -1,5 +1,5 @@
 body {
-    background-image: url('./assets/fondo.jpg');
+    background-image: url('./assets/fondo.JPEG');
     font-family: sans-serif;
 }
 
@@ -37,5 +37,5 @@ body {
     border: none;
     padding: 10px 10px;
     font-size:medium;
-    cursor: pointer; /* Solo es para distinguir que funciona */
+    
 }
