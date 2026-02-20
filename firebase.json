@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "PARCIALES/PrimerParcial/examen",
     "ignore": [
       "firebase.json",
       "**/.*",
