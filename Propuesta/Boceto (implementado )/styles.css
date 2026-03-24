@@ -13,13 +13,11 @@ body {
     align-items: center;
 }
 
-/* CONTENEDOR CENTRAL */
 .container {
     width: 90%;
     max-width: 1000px;
 }
 
-/* HEADER */
 header {
     width: 100%;
     background: #020617;
@@ -46,18 +44,16 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* SECCIONES */
 section {
     margin: 40px 0;
     text-align: center;
 }
 
-/* HERO */
-.hero {
+.partesuperior {
     padding: 60px 0;
 }
 
-/* GRID CATÁLOGO */
+
 .grid {
     display: flex;
     justify-content: center;
@@ -70,6 +66,12 @@ section {
     padding: 20px;
     border-radius: 10px;
     width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
@@ -106,7 +108,7 @@ button {
     cursor: pointer;
 }
 
-/* FOOTER */
+
 footer {
     width: 100%;
     text-align: bottom;
