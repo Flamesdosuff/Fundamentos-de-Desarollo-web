@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventos JS</title>
+
+
+<style>
+
+.container{
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+}
+
+.element{
+width: 200px;
+height: 200px;
+text-align: center;
+font-weight: bold;
+}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+    <button onclick="crearElemento()">Agregar elemento</button>
+    <input type="text" id = "Texto">
+    <br><br>
+    <label for=" ">Red</label>
+    <input type="number" min="0" max="255" id="R">
+    <label for=" ">Green</label>
+    <input type="number" min="0" max="255" id ="G">
+    <label for=" ">Blue</label>
+    <input type="number" min="0" max="255" id ="B">
+    <br>
+
+    <div class="container">
+
+
+
+    </div>
+
+<script>
+
+    const container = document.querySelector(".container");
+    const input = document.querySelector("#Texto");
+    let counter = 0;
+
+    const r = document.querySelector("#R");
+    const g = document.querySelector("#G");
+    const b = document.querySelector("#B");
+
+
+    function crearElemento(){
+    counter++;
+    const element = document.createElement("div");
+    element.textContent = input.value;
+    element.classList.add("element");
+    element.style.backgroundColor = "rgb(" + r.value + ", " + g.value + ", " + b.value + ")";
+    container.appendChild(element);
+
+    input.value="";
+    r.value=0;
+    g.value=0;
+    b.value=0;
+    }
+
+</script>
+
+
+
+</body>
+</html>
